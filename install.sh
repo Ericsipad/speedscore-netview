@@ -133,6 +133,7 @@ ExecStart=/opt/speedscore-netview/bin/speedscore-netview run
 Restart=always
 RestartSec=5
 # nftables: the speed test ports are opened for the visitor's IP only, while the test runs.
+# Without a test they give no answer to anyone.
 AmbientCapabilities=CAP_NET_ADMIN
 Environment=SPEEDSCORE_NETVIEW_CONFIG=/etc/speedscore-netview/config.toml
 Environment=SPEEDSCORE_NETVIEW_STATE=/var/lib/speedscore-netview
