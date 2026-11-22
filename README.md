@@ -8,12 +8,29 @@ keeps itself up to date.
 **All services on this server are managed in your Speedscore web dashboard.** The server has only a small page for
 setup and status.
 
+## For ISPs and network managers
+
+- **Register your own ASN and IP ranges.** A network manager or an ISP registers its own AS number and IP ranges on
+  speedscore.net. Users who visit from that network then automatically test against the most appropriate server, the
+  one the ISP chooses and operates, which ensures the most accurate results.
+- **Full visibility.** You see the metrics of the tests run from your own network.
+- **Routers managed together.** Users can view and manage their own routers along with the ISP's technicians, with
+  SNMP and TR-069 management options.
+- **Price.** 10 devices can connect for free, and unlimited devices can connect for $10 a month on speedscore.net.
+- **Free ISP account.** If an ISP is registered and users on its own ASN and IP ranges subscribe to the 180-day
+  history and Personal VPN plan, the ISP's account is free once 10 such users have accumulated.
+- **Home users.** Users can access their own home server if they install the Speedscore tool and the Personal
+  WireGuard VPN host on a Windows or Mac PC in their home.
+
+Read more at <https://speedscore.net/linux-server>. To register your ASN and IP ranges, sign in and open
+<https://speedscore.net/my-account#isp-ranges>.
+
 ## What you need
 
 - Ubuntu 24.04 LTS or newer, on x86_64 or arm64 (a small virtual machine is fine).
 - Recommended: at least 1 CPU and 2 GB RAM for up to 500 IPs, and 2 CPUs for 500+ devices.
-- A Speedscore account. Linking a server is free, with 10 monitored devices in total (IP addresses, web checks, SNMP
-  devices and TR-069 routers); more than 10 needs the premium subscription.
+- A Speedscore account. Linking a server is free. 10 devices can connect for free (IP addresses, web checks, SNMP
+  devices and TR-069 routers together); unlimited devices can connect for $10 a month on speedscore.net.
 
 ## Install
 
