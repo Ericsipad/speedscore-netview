@@ -75,7 +75,8 @@ the server on your account.
 ## What this repository holds
 
 Only the install and uninstall scripts, these instructions, the license and, in `bin`, the ready-built program
-(`speedscore-netview-x86_64`, `speedscore-netview-aarch64`, each with its `.sha256`). There is no source code here.
+(`speedscore-netview-x86_64`, `speedscore-netview-aarch64`, each with its `.sha256`, and `release.json`, which names
+the current version so linked servers update themselves). There is no source code here.
 
 ## License
 
