@@ -151,6 +151,8 @@ systemctl restart speedscore-netview.service
 if ufw status 2>/dev/null | grep -q '^Status: active'; then
   say "- opening port $PAGE_PORT (the setup page) in ufw"
   ufw allow "$PAGE_PORT/tcp" comment 'Speedscore Netview setup page' >/dev/null
+  say "- opening port 51820 (UDP, the Personal VPN your phones connect to) in ufw"
+  ufw allow 51820/udp comment 'Speedscore Netview Personal VPN' >/dev/null
 fi
 
 local_ips="$(hostname -I 2>/dev/null | tr ' ' '\n' | grep -E '^[0-9]+\.' | head -n 3 | tr '\n' ' ' || true)"

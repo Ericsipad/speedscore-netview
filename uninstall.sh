@@ -18,6 +18,7 @@ done
 nft delete table inet speedscore_netview >/dev/null 2>&1 || true
 if ufw status 2>/dev/null | grep -q '^Status: active'; then
   ufw delete allow 8443/tcp >/dev/null 2>&1 || true
+  ufw delete allow 51820/udp >/dev/null 2>&1 || true
 fi
 rm -f /etc/sudoers.d/speedscore-netview /usr/local/bin/speedscore-netview /etc/sysctl.d/60-speedscore-netview.conf
 rm -rf /usr/local/lib/speedscore-netview /opt/speedscore-netview

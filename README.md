@@ -60,6 +60,11 @@ The page also shows the server's CPU, memory, disk and the ports it uses for spe
 ## Ports
 
 - 8443 (TCP): the setup page. You can close it again in your firewall once the server is linked.
+- 51820 (UDP): the Personal VPN, when you switch it on for this server on speedscore.net (Connection stats, Personal
+  VPN). Your phones and laptops connect to it with the official WireGuard app: create a VPN user on that page and
+  scan its QR code. The WireGuard server runs inside the program as the service user; it adds no network adapter and
+  changes no routing or firewall rule. Open the port in your provider's firewall (cloud "security group") too. If
+  another program already uses 51820 the next free port is used; the page shows which.
 - Speed test ports: the ones you choose on your account. Open them (TCP and UDP) in your router or firewall; the
   server only listens on them while a test runs, only for the visitor who started it.
 
